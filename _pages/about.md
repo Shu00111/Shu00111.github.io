@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Robotics, machine learning, and research tooling.
+subtitle: Autonomous robotic exploration, legged field robots, and planetary robotics.
 
 profile:
   align: right
@@ -24,8 +24,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Yiwei Shu. My interests sit at the intersection of robotics, machine learning, and research tooling, with current work touching robot manipulability transfer, SPD-manifold learning, probabilistic modeling, and reproducible technical workflows.
+I am Yiwei Shu, a Ph.D. student at the University of Chinese Academy of Sciences and the Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences.
 
-This site collects my CV, public projects, notes, and research-adjacent tools. Recent work includes a MATLAB reproduction scaffold for manipulability transfer and public Codex skills for GitHub weekly reports, reimbursement organization, and research/office automation.
+My research focuses on autonomous robotic exploration, legged robots and field robotics, motion planning and online recovery, robot perception and SLAM, space and planetary robotics, and risk-aware planning and control.
 
-You can find my public code on [GitHub](https://github.com/Shu00111).
+My current project develops Unitree Go2 autonomous exploration using LiDAR, depth cameras, and grid-based mapping for lunar-analogue environments. I am interested in overseas visiting Ph.D. opportunities and research collaboration with robotics groups working on field, legged, and planetary autonomy.
+
+Email: [shuyiwei24@mails.ucas.ac.cn](mailto:shuyiwei24@mails.ucas.ac.cn). GitHub: [Shu00111](https://github.com/Shu00111).

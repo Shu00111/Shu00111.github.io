@@ -1,74 +1,158 @@
 cv:
   name: Yiwei Shu
-  label: Robotics and AI Researcher
-  email: ""
-  location: ""
+  label: Ph.D. Student in Robotics
+  email: shuyiwei24@mails.ucas.ac.cn
+  location: Beijing, China
   image: ""
   summary: >
-    Yiwei Shu works at the intersection of robotics, machine learning, and
-    research tooling. Current interests include robot manipulability transfer,
-    learning on SPD manifolds, probabilistic modeling, and practical tools that
-    help researchers turn technical activity into clear written outputs.
+    Yiwei Shu is a Ph.D. student at the University of Chinese Academy of
+    Sciences and the Technology and Engineering Center for Space Utilization,
+    Chinese Academy of Sciences. His research focuses on autonomous robotic
+    exploration, legged robots and field robotics, motion planning and online
+    recovery, robot perception and SLAM, space and planetary robotics, and
+    risk-aware planning and control. He is interested in overseas visiting Ph.D.
+    opportunities and research collaborations in field and planetary robotics.
 
   social_networks:
     - network: GitHub
       username: Shu00111
 
   sections:
-    Academic Interests:
-      - name: Robotics and Robot Learning
-        icon: fa-solid fa-robot
-        keywords: "Manipulability transfer, SPD manifolds, probabilistic modeling, redundancy resolution"
+    Experience:
+      - company: Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences
+        position: Ph.D. Student
+        location: Beijing, China
+        start_date: 2024
+        end_date: present
+        summary: >
+          Research on autonomous robotic exploration for challenging and
+          lunar-analogue environments, with emphasis on legged robots,
+          perception-driven mapping, and robust motion planning.
 
-      - name: Research Automation
-        icon: fa-solid fa-pen-to-square
-        keywords: "Technical reporting, reproducible workflows, Codex skills, GitHub activity summaries"
+    Education:
+      - institution: University of Chinese Academy of Sciences
+        location: Beijing, China
+        area: Robotics / Space Robotics
+        studyType: Ph.D.
+        start_date: 2024
+        end_date: present
+        highlights:
+          - Affiliated with the Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences.
+          - Research topics include autonomous exploration, legged field robots, SLAM, motion planning, and planetary robotics.
+
+    Academic Interests:
+      - name: Autonomous Robotic Exploration
+        icon: fa-solid fa-route
+        keywords:
+          - Exploration planning
+          - Online recovery
+          - Risk-aware autonomy
+
+      - name: Legged Robots and Field Robotics
+        icon: fa-solid fa-robot
+        keywords:
+          - Quadruped robots
+          - Unstructured terrain
+          - Lunar-analogue environments
+
+      - name: Perception, Mapping, and SLAM
+        icon: fa-solid fa-map-location-dot
+        keywords:
+          - LiDAR
+          - Depth cameras
+          - Grid-based mapping
+
+      - name: Space and Planetary Robotics
+        icon: fa-solid fa-moon
+        keywords:
+          - Planetary exploration
+          - Surface mobility
+          - Autonomous deep-space systems
+
+    Publications:
+      - title: Finite-State Visual Servo Control for Autonomous Target Landing of Low-Cost Underactuated Fixed-Wing Aircraft
+        publisher: Under review, Aerospace Science and Technology
+        summary: >
+          Work on finite-state visual servo control for autonomous target
+          landing of low-cost underactuated fixed-wing aircraft.
+
+      - title: "From End-Effector Targets to Whole-Arm Postures: Configuration-Space Waypoint Recovery for Reactive Manipulation"
+        publisher: Submitted to IEEE Robotics and Automation Letters
+        summary: >
+          Work on configuration-space waypoint recovery for reactive
+          manipulation from end-effector targets to whole-arm postures.
+
+      - title: Attitude Control of Unpowered Aircraft in Flight Based on Kalman Filter Visual Servo-PID Optimization Algorithm
+        publisher: CCC 2026, oral presentation accepted
+        releaseDate: 2026
+        summary: >
+          Work on visual-servo-based attitude control for unpowered aircraft
+          using Kalman filtering and PID optimization.
+
+      - title: "Expanding Grasp Reachability: Field-based Pose-constrained Two-stage Grasp Planning"
+        publisher: ICoSR 2026, oral presentation accepted
+        releaseDate: 2026
+        summary: >
+          Work on pose-constrained two-stage grasp planning for expanding
+          grasp reachability.
+
+      - title: "Learning-based Extended-workspace Manipulation: A Self-relocating Space Crawler for Autonomous Deep-space Outposts"
+        publisher: COSPAR 2026, poster accepted
+        releaseDate: 2026
+        summary: >
+          Work on learning-based extended-workspace manipulation for a
+          self-relocating space crawler in autonomous deep-space outpost
+          scenarios.
 
     Projects:
-      - name: Manipulability Transfer Reproduction
-        url: https://github.com/Shu00111
+      - name: Unitree Go2 Autonomous Exploration for Lunar-Analogue Environments
         summary: >
-          MATLAB reproduction scaffold for robot manipulability transfer using
-          SPD-manifold learning and redundancy resolution.
+          Autonomous exploration system for a Unitree Go2 quadruped robot using
+          LiDAR, depth cameras, and grid-based mapping in lunar-analogue
+          environments.
         highlights:
-          - Implemented reusable modules for SPD logarithm/exponential maps, parallel transport, and Stein divergence.
-          - Added GMM/GMR learning code specialized to time-conditioned 2x2 SPD manipulability matrices.
-          - Included a runnable demo pipeline for generating demonstrations and reproducing learned manipulability profiles.
+          - Develop perception and mapping pipelines that combine LiDAR and depth camera observations.
+          - Build grid-based environmental representations for exploration and navigation.
+          - Study motion planning and online recovery strategies for legged robots in uneven, uncertain terrain.
 
-      - name: GitHub Weekly Report Skill
-        url: https://github.com/Shu00111/Github-Weekly-Report-Skill
+      - name: Reactive Manipulation and Waypoint Recovery
         summary: >
-          A Codex/Claude skill that turns GitHub or local git activity into a
-          structured Markdown weekly report.
+          Research on recovering whole-arm robot postures from end-effector
+          targets for reactive manipulation in constrained environments.
         highlights:
-          - Groups commits into meaningful repositories and workstreams.
-          - Produces progress, problems, next plans, discussion points, daily notes, and workload summaries.
+          - Connect end-effector task goals with configuration-space waypoint generation.
+          - Improve manipulation robustness under changing targets and constraints.
 
-      - name: Office Skills
-        url: https://github.com/Shu00111/Office-Skills
+      - name: Autonomous Landing and Visual Servo Control
         summary: >
-          Public Codex skills for office, research, and administrative workflows.
+          Research on visual servo control and attitude control for autonomous
+          aircraft landing and flight stabilization.
         highlights:
-          - Includes reimbursement material organization from receipts, payment screenshots, invoices, and item photos.
-          - Packages reusable workflow skills with scripts and installation instructions.
-
-      - name: UCAS Notes
-        url: https://github.com/Shu00111/UCAS-Notes
-        summary: Course notes for UCAS coursework.
-
-      - name: STAT107 Micro Project
-        url: https://github.com/Shu00111/STAT107MicroProject
-        summary: Public Jupyter Notebook project repository.
+          - Design finite-state control strategies for target landing.
+          - Combine visual servoing, Kalman filtering, and PID optimization for low-cost aircraft autonomy.
 
     Skills:
-      - name: Programming and Tooling
-        icon: fa-solid fa-code
-        keywords: "Python, MATLAB, Jupyter Notebook, Git, GitHub, Markdown"
-
-      - name: Robotics and Learning
+      - name: Robotics and Planning
         icon: fa-solid fa-robot
-        keywords: "Robot learning, manipulability analysis, SPD manifolds, GMM, GMR, redundancy resolution"
+        keywords:
+          - Autonomous exploration
+          - Motion planning
+          - Online recovery
+          - Risk-aware planning and control
 
-      - name: Research Workflows
-        icon: fa-solid fa-pen-to-square
-        keywords: "Reproducible research, technical reporting, automation, Codex skills"
+      - name: Perception and Mapping
+        icon: fa-solid fa-map
+        keywords:
+          - SLAM
+          - LiDAR
+          - Depth cameras
+          - Grid-based mapping
+
+      - name: Platforms and Implementation
+        icon: fa-solid fa-code
+        keywords:
+          - Legged robots
+          - Unitree Go2
+          - MATLAB
+          - Python
+          - GitHub
