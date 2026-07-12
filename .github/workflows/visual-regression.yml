@@ -59,9 +59,14 @@ jobs:
       - name: Install JS deps 📦
         run: npm ci
 
-      - name: Prepare baseline worktree (v0.16.3) 🧱
+      - name: Prepare baseline worktree 🧱
+        env:
+          BASELINE_REF: ${{ github.event.pull_request.base.sha }}
         run: |
-          git worktree add ../al-folio-baseline v0.16.3
+          if [ -z "$BASELINE_REF" ]; then
+            BASELINE_REF="origin/v1.0-dev"
+          fi
+          git worktree add ../al-folio-baseline "$BASELINE_REF"
           (cd ../al-folio-baseline && bundle install && npm ci)
 
       - name: Install Jupyter + ImageMagick runtime deps 🧰
