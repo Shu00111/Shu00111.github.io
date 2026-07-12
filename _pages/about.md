@@ -6,9 +6,12 @@ subtitle: Autonomous robotic exploration, legged field robots, and planetary rob
 
 profile:
   align: right
-  image:
+  image: profile.jpg
   image_circular: false # crops the image to make it circular
   more_info:
+    <p>Ph.D. Student in Robotics</p>
+    <p>University of Chinese Academy of Sciences</p>
+    <p>Beijing, China</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -26,8 +29,8 @@ latest_posts:
 
 I am Yiwei Shu, a Ph.D. student at the University of Chinese Academy of Sciences and the Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences.
 
-My research focuses on autonomous robotic exploration, legged robots and field robotics, motion planning and online recovery, robot perception and SLAM, space and planetary robotics, and risk-aware planning and control.
+My research focuses on autonomous robotic systems operating in uncertain and unstructured environments. In particular, I am interested in field and legged robotics, autonomous exploration, motion planning and online recovery, robot perception and SLAM, and space and planetary robotics.
 
-My current project develops Unitree Go2 autonomous exploration using LiDAR, depth cameras, and grid-based mapping for lunar-analogue environments. I am interested in overseas visiting Ph.D. opportunities and research collaboration with robotics groups working on field, legged, and planetary autonomy.
+I am currently developing autonomous exploration systems for the Unitree Go2 quadruped robot using LiDAR, depth cameras, and grid-based world models. I am also working on reactive manipulation, risk-aware planning, and autonomous control for aerospace robotic systems.
 
 Email: [shuyiwei24@mails.ucas.ac.cn](mailto:shuyiwei24@mails.ucas.ac.cn). GitHub: [Shu00111](https://github.com/Shu00111).
