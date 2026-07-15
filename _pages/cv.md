@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-cv_pdf: # add a generated or uploaded PDF path here when ready
+cv_pdf: /assets/rendercv/rendercv_output/Yiwei_Shu_CV.pdf
 cv_format: rendercv # options: rendercv, jsonresume
 description: Academic robotics CV for Yiwei Shu.
 toc:
