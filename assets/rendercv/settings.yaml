@@ -1,9 +1,8 @@
 # for details on settings, see https://docs.rendercv.com/user_guide/yaml_input_structure/settings/
 settings:
+  current_date: today
   render_command:
-    # Paths must be relative to _data/cv.yaml
-    design: ../assets/rendercv/design.yaml
-    locale: ../assets/rendercv/locale.yaml
+    # Paths must be relative to _data/cv.yml
     typst_path: ../assets/rendercv/rendercv_output/NAME_IN_SNAKE_CASE_CV.typ
     pdf_path: ../assets/rendercv/rendercv_output/NAME_IN_SNAKE_CASE_CV.pdf
     markdown_path: ../assets/rendercv/rendercv_output/NAME_IN_SNAKE_CASE_CV.md

@@ -1,158 +1,206 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Yiwei Shu
-  label: Ph.D. Student in Robotics
-  email: shuyiwei24@mails.ucas.ac.cn
+  headline: Ph.D. Student in Robotics | Field and Planetary Robotics
   location: Beijing, China
-  image: ""
-  summary: >
-    Yiwei Shu is a Ph.D. student at the University of Chinese Academy of
-    Sciences and the Technology and Engineering Center for Space Utilization,
-    Chinese Academy of Sciences. His research focuses on autonomous robotic
-    exploration, legged robots and field robotics, motion planning and online
-    recovery, robot perception and SLAM, space and planetary robotics, and
-    risk-aware planning and control. He is interested in overseas visiting Ph.D.
-    opportunities and research collaborations in field and planetary robotics.
+  email: shuyiwei24@mails.ucas.ac.cn
+  website: https://shu00111.github.io
+  photo:
 
   social_networks:
     - network: GitHub
       username: Shu00111
 
   sections:
-    Experience:
-      - company: Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences
-        position: Ph.D. Student
-        location: Beijing, China
-        start_date: 2024
-        end_date: present
-        summary: >
-          Research on autonomous robotic exploration for challenging and
-          lunar-analogue environments, with emphasis on legged robots,
-          perception-driven mapping, and robust motion planning.
+    Research Profile:
+      - bullet: >
+          Ph.D. student in robotics at the University of Chinese Academy of
+          Sciences and the Technology and Engineering Center for Space
+          Utilization, Chinese Academy of Sciences. Research interests include
+          reliable autonomous exploration for field and planetary robots,
+          active SLAM, risk-aware motion planning, reactive manipulation, and
+          low-cost aerospace robotic systems. Open to visiting Ph.D.
+          opportunities and international research collaborations.
 
     Education:
       - institution: University of Chinese Academy of Sciences
-        location: Beijing, China
-        area: Robotics / Space Robotics
-        studyType: Ph.D.
+        area: Robotics and Space Robotics
+        degree: Ph.D.
         start_date: 2024
         end_date: present
+        location: Beijing, China
         highlights:
           - Affiliated with the Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences.
-          - Research topics include autonomous exploration, legged field robots, SLAM, motion planning, and planetary robotics.
+          - Research on autonomous exploration, legged field robots, active SLAM, motion planning, and planetary robotics.
 
-    Academic Interests:
-      - name: Autonomous Robotic Exploration
-        icon: fa-solid fa-route
-        keywords:
-          - Exploration planning
-          - Online recovery
-          - Risk-aware autonomy
+      - institution: ShanghaiTech University
+        area: Electronic Information Engineering
+        degree: B.Eng.
+        start_date: 2020-09
+        end_date: 2024-06
+        location: Shanghai, China
+        highlights:
+          - Undergraduate research in robotics, visual control, point-cloud registration, medical imaging, and integrated-circuit design.
 
-      - name: Legged Robots and Field Robotics
-        icon: fa-solid fa-robot
-        keywords:
-          - Quadruped robots
-          - Unstructured terrain
-          - Lunar-analogue environments
+      - institution: University of Illinois Urbana-Champaign
+        area: Exchange Program
+        degree: Exchange
+        start_date: 2023-01
+        end_date: 2023-05
+        location: Urbana, IL, USA
+        highlights:
+          - Completed Quantum Physics, Data Science Discovery, and Statistical Analysis with A+ grades.
 
-      - name: Perception, Mapping, and SLAM
-        icon: fa-solid fa-map-location-dot
-        keywords:
-          - LiDAR
-          - Depth cameras
-          - Grid-based mapping
+    Experience:
+      - company: Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences
+        position: Ph.D. Researcher
+        start_date: 2024
+        end_date: present
+        location: Beijing, China
+        summary: University of Chinese Academy of Sciences
+        highlights:
+          - Develop reliable autonomy for Unitree Go2 quadruped robots operating in uncertain, unstructured, and lunar-analogue environments.
+          - Build simulation and evaluation pipelines for active SLAM, world-model reliability, terrain traversability, and sim-to-real navigation.
+          - Research reactive whole-arm manipulation, grasp planning, risk-aware motion planning, and autonomous aerospace control.
 
-      - name: Space and Planetary Robotics
-        icon: fa-solid fa-moon
-        keywords:
-          - Planetary exploration
-          - Surface mobility
-          - Autonomous deep-space systems
+      - company: ShanghaiTech Automation and Robotics Center (STAR Center)
+        position: Undergraduate Researcher
+        start_date: 2022-09
+        end_date: 2024-06
+        location: Shanghai, China
+        highlights:
+          - Developed fixed-wing guidance and visual-control simulations for accurate flight and target landing under disturbances.
+          - Reconstructed 3D scenes from LiDAR point clouds and implemented ICP-based point-cloud registration using PCL.
+          - Connected aerodynamic simulation, control-model development, and physical launch experiments in a sim-to-real workflow.
 
-    Publications:
+    Manuscripts Under Review and Submitted:
       - title: Finite-State Visual Servo Control for Autonomous Target Landing of Low-Cost Underactuated Fixed-Wing Aircraft
-        publisher: Under review, Aerospace Science and Technology
+        authors:
+          - "**Yiwei Shu**"
+          - Shuquan Wang
+        journal: Manuscript under review at Aerospace Science and Technology
+        date: 2026-06
         summary: >
-          Work on finite-state visual servo control for autonomous target
-          landing of low-cost underactuated fixed-wing aircraft.
+          **Yiwei Shu**, Shuquan Wang. Manuscript under review at *Aerospace
+          Science and Technology*. Proposed an IMU/monocular-camera finite-state visual servo
+          controller and validated it with CFD, randomized simulations, and real
+          flight tests; reduced final image-plane radial error from 0.5049 to
+          0.0027 against a sliding-mode baseline.
 
       - title: "From End-Effector Targets to Whole-Arm Postures: Configuration-Space Waypoint Recovery for Reactive Manipulation"
-        publisher: Submitted to IEEE Robotics and Automation Letters
+        authors:
+          - "**Yiwei Shu**"
+          - et al.
+        journal: "Manuscript submitted to IEEE Robotics and Automation Letters (status: received)"
+        date: 2026-07
         summary: >
-          Work on configuration-space waypoint recovery for reactive
-          manipulation from end-effector targets to whole-arm postures.
+          **Yiwei Shu** et al. Manuscript submitted to *IEEE Robotics and
+          Automation Letters* (submission status: received). Introduced PostureWaypoint for online
+          configuration-space recovery; evaluated four manipulators across six
+          constrained 3D tasks and validated the method on an RM75 robot.
 
-      - title: Attitude Control of Unpowered Aircraft in Flight Based on Kalman Filter Visual Servo-PID Optimization Algorithm
-        publisher: CCC 2026, oral presentation accepted
-        releaseDate: 2026
+      - title: "RKILPlanner: Risk-based Kinematic Imitation Learning Planning Towards Human-Like Driving in Highway Scenarios"
+        authors:
+          - "**Yiwei Shu**"
+          - Shuquan Wang
+        journal: Manuscript submitted to ROBIO 2026
+        date: 2026
         summary: >
-          Work on visual-servo-based attitude control for unpowered aircraft
-          using Kalman filtering and PID optimization.
+          **Yiwei Shu**, Shuquan Wang. Manuscript submitted to *ROBIO 2026*.
+          Combined Driver's Risk Field maps, driver-style encoding, and
+          LSTM/CNN features in a differentiable kinematic imitation-learning
+          planner evaluated on the HighD naturalistic highway dataset.
 
+    Publications and Presentations:
       - title: "Expanding Grasp Reachability: Field-based Pose-constrained Two-stage Grasp Planning"
-        publisher: ICoSR 2026, oral presentation accepted
-        releaseDate: 2026
+        authors:
+          - "**Yiwei Shu**"
+          - Shuquan Wang
+          - Jun Li
+          - Hanying Sang
+          - Yidong Ye
+        journal: ICoSR 2026, accepted full paper and oral presentation
+        date: 2026-07
         summary: >
-          Work on pose-constrained two-stage grasp planning for expanding
-          grasp reachability.
+          **Yiwei Shu**, Shuquan Wang, Jun Li, Hanying Sang, and Yidong Ye.
+          Accepted full paper and oral presentation at *ICoSR 2026*. Developed
+          reachability and manipulability fields with a two-stage policy that
+          expands pose-constrained grasping near workspace boundaries; validated
+          in simulation and on a 7-DoF RM75 manipulator.
 
       - title: "Learning-based Extended-workspace Manipulation: A Self-relocating Space Crawler for Autonomous Deep-space Outposts"
-        publisher: COSPAR 2026, poster accepted
-        releaseDate: 2026
+        authors:
+          - "**Yiwei Shu**"
+          - Shuquan Wang
+        journal: 46th COSPAR Scientific Assembly 2026, oral presentation
+        date: 2026
         summary: >
-          Work on learning-based extended-workspace manipulation for a
-          self-relocating space crawler in autonomous deep-space outpost
-          scenarios.
+          **Yiwei Shu**, Shuquan Wang. Oral presentation at the *46th COSPAR
+          Scientific Assembly 2026*. Proposed a passive-rail, self-relocating
+          space crawler and hierarchical reinforcement-learning framework for
+          autonomous extended-workspace manipulation in deep-space outposts.
+
+      - title: Attitude Control of Unpowered Aircraft in Flight Based on Kalman Filter Visual Servo-PID Optimization Algorithm
+        authors:
+          - "**Yiwei Shu**"
+          - Shuquan Wang
+        journal: 44th Chinese Control Conference (CCC 2025)
+        date: 2025-07
+        summary: >
+          **Yiwei Shu**, Shuquan Wang. Accepted for presentation and publication
+          in the proceedings of the *44th Chinese Control Conference (CCC
+          2025)*. Combined visual servoing, adaptive PID control, and Kalman
+          filtering for robust low-cost unpowered-aircraft attitude control.
 
     Projects:
-      - name: Unitree Go2 Autonomous Exploration for Lunar-Analogue Environments
-        summary: >
-          Autonomous exploration system for a Unitree Go2 quadruped robot using
-          LiDAR, depth cameras, and grid-based mapping in lunar-analogue
-          environments.
+      - name: Reliable Autonomous Exploration for Unitree Go2
+        start_date: 2026
+        end_date: present
+        summary: Reliable active SLAM and navigation for quadruped robots in lunar-analogue and unstructured environments.
         highlights:
-          - Develop perception and mapping pipelines that combine LiDAR and depth camera observations.
-          - Build grid-based environmental representations for exploration and navigation.
-          - Study motion planning and online recovery strategies for legged robots in uneven, uncertain terrain.
+          - Integrate LiDAR, depth sensing, grid-based mapping, and exploration planning for the Unitree Go2 platform.
+          - Build Isaac Lab lunar-terrain benchmarks and real-physics evaluation pipelines for legged navigation.
+          - Investigate calibrated world models, distribution shift, terrain traversability, and safe sim-to-real deployment.
 
-      - name: Reactive Manipulation and Waypoint Recovery
-        summary: >
-          Research on recovering whole-arm robot postures from end-effector
-          targets for reactive manipulation in constrained environments.
+      - name: PostureWaypoint for Reactive Whole-Arm Manipulation
+        start_date: 2025
+        end_date: present
+        summary: Configuration-space waypoint recovery for online manipulation in cluttered and constrained workspaces.
         highlights:
-          - Connect end-effector task goals with configuration-space waypoint generation.
-          - Improve manipulation robustness under changing targets and constraints.
+          - Resolve end-effector waypoint ambiguity through whole-arm clearance, orientation consistency, and joint-feasibility constraints.
+          - Evaluate on RM75, Franka Panda, UR5e, and KUKA iiwa manipulators with simulation and real-robot experiments.
 
-      - name: Autonomous Landing and Visual Servo Control
-        summary: >
-          Research on visual servo control and attitude control for autonomous
-          aircraft landing and flight stabilization.
+      - name: Field-based Pose-constrained Two-stage Grasp Planning
+        start_date: 2025
+        end_date: 2026
+        summary: Reachability- and manipulability-aware grasp planning for objects near manipulator workspace boundaries.
         highlights:
-          - Design finite-state control strategies for target landing.
-          - Combine visual servoing, Kalman filtering, and PID optimization for low-cost aircraft autonomy.
+          - Construct reachability and manipulability fields directly from the robot model.
+          - Use a sweep-then-pick policy when direct grasping is infeasible under strict pose constraints.
 
-    Skills:
-      - name: Robotics and Planning
-        icon: fa-solid fa-robot
-        keywords:
-          - Autonomous exploration
-          - Motion planning
-          - Online recovery
-          - Risk-aware planning and control
+      - name: Autonomous Fixed-Wing Target Landing
+        start_date: 2023
+        end_date: 2026
+        summary: Low-cost visual-servo control for underactuated and unpowered fixed-wing aircraft.
+        highlights:
+          - Combine CFD-based aerodynamic characterization, IMU guidance, monocular visual servoing, and adaptive control.
+          - Validate controllers through randomized simulation and physical flight experiments.
 
-      - name: Perception and Mapping
-        icon: fa-solid fa-map
-        keywords:
-          - SLAM
-          - LiDAR
-          - Depth cameras
-          - Grid-based mapping
+    Technical Skills:
+      - label: Programming
+        details: Python, MATLAB, C, C++, R, Verilog, LaTeX
+      - label: Robotics
+        details: ROS/ROS 2, PCL, Unitree Go2, RM75, STM32, LiDAR and depth sensing
+      - label: Simulation and Learning
+        details: Isaac Lab, MuJoCo, PyTorch, scikit-learn, numerical simulation
+      - label: Engineering Tools
+        details: Git, Linux, SolidWorks, Altium Designer, ANSYS Fluent, Cadence, Vivado
 
-      - name: Platforms and Implementation
-        icon: fa-solid fa-code
-        keywords:
-          - Legged robots
-          - Unitree Go2
-          - MATLAB
-          - Python
-          - GitHub
+    Selected Honors:
+      - bullet: Second Prize, East China Division, 6th National Undergraduate IC Innovation and Entrepreneurship Competition (2022)
+      - bullet: Second Prize, RoboMaster Eastern Division (2022)
+      - bullet: Third Prize, RoboMaster National Competition (2022)
+
+    Teaching and Leadership:
+      - bullet: "Teaching Assistant, Digital Circuits, ShanghaiTech University (September-December 2022): led tutorials and assisted with grading."
+      - bullet: "Sentry Team Lead, RoboMaster (2021-2023): coordinated embedded programming, PCB design, mechanical modeling, and team planning."
