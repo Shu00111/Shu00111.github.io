@@ -39,8 +39,9 @@ Email: [shuyiwei24@mails.ucas.ac.cn](mailto:shuyiwei24@mails.ucas.ac.cn). GitHub
 <script>
   window.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.publications .links a[href^="/projects/"]').forEach((link) => {
+      const title = link.closest('li')?.querySelector('.title')?.textContent.trim() || 'project';
       link.textContent = 'Project';
-      link.setAttribute('aria-label', 'Open project page');
+      link.setAttribute('aria-label', `Open project page: ${title}`);
     });
   });
 </script>

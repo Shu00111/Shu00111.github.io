@@ -87,15 +87,19 @@ toc:
           {% assign entries = section_entries %}
           {% include cv/publications.liquid %}
         {% else %}
-          {% for entry in section_entries %}
-            {% if entry.bullet %}
-              <ul class="card-text font-weight-light list-group list-group-flush">
+          {% if section_entries[0].bullet %}
+            <ul class="card-text font-weight-light list-group list-group-flush">
+              {% for entry in section_entries %}
                 <li class="list-group-item">{{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-              </ul>
-            {% elsif entry.label %}
-              <div class="card-text font-weight-light mb-2"><strong>{{ entry.label }}:</strong> {{ entry.details }}</div>
-            {% endif %}
-          {% endfor %}
+              {% endfor %}
+            </ul>
+          {% else %}
+            {% for entry in section_entries %}
+              {% if entry.label %}
+                <div class="card-text font-weight-light mb-2"><strong>{{ entry.label }}:</strong> {{ entry.details }}</div>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
         {% endif %}
       </div>
     </div>
