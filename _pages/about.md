@@ -35,3 +35,12 @@ Before beginning my doctoral studies, I received a B.Eng. in Electronic Informat
 I am open to visiting Ph.D. opportunities and international research collaborations in field and planetary robotics.
 
 Email: [shuyiwei24@mails.ucas.ac.cn](mailto:shuyiwei24@mails.ucas.ac.cn). GitHub: [Shu00111](https://github.com/Shu00111).
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.publications .links a[href^="/projects/"]').forEach((link) => {
+      link.textContent = 'Project';
+      link.setAttribute('aria-label', 'Open project page');
+    });
+  });
+</script>

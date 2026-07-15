@@ -5,23 +5,13 @@ cv:
   location: Beijing, China
   email: shuyiwei24@mails.ucas.ac.cn
   website: https://shu00111.github.io
-  photo:
+  photo: ../assets/img/profile-cv.jpg
 
   social_networks:
     - network: GitHub
       username: Shu00111
 
   sections:
-    Research Profile:
-      - bullet: >
-          Ph.D. student in robotics at the University of Chinese Academy of
-          Sciences and the Technology and Engineering Center for Space
-          Utilization, Chinese Academy of Sciences. Research interests include
-          reliable autonomous exploration for field and planetary robots,
-          active SLAM, risk-aware motion planning, reactive manipulation, and
-          low-cost aerospace robotic systems. Open to visiting Ph.D.
-          opportunities and international research collaborations.
-
     Education:
       - institution: University of Chinese Academy of Sciences
         area: Robotics and Space Robotics
@@ -50,28 +40,6 @@ cv:
         location: Urbana, IL, USA
         highlights:
           - Completed Quantum Physics, Data Science Discovery, and Statistical Analysis with A+ grades.
-
-    Experience:
-      - company: Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences
-        position: Ph.D. Researcher
-        start_date: 2024
-        end_date: present
-        location: Beijing, China
-        summary: University of Chinese Academy of Sciences
-        highlights:
-          - Develop reliable autonomy for Unitree Go2 quadruped robots operating in uncertain, unstructured, and lunar-analogue environments.
-          - Build simulation and evaluation pipelines for active SLAM, world-model reliability, terrain traversability, and sim-to-real navigation.
-          - Research reactive whole-arm manipulation, grasp planning, risk-aware motion planning, and autonomous aerospace control.
-
-      - company: ShanghaiTech Automation and Robotics Center (STAR Center)
-        position: Undergraduate Researcher
-        start_date: 2022-09
-        end_date: 2024-06
-        location: Shanghai, China
-        highlights:
-          - Developed fixed-wing guidance and visual-control simulations for accurate flight and target landing under disturbances.
-          - Reconstructed 3D scenes from LiDAR point clouds and implemented ICP-based point-cloud registration using PCL.
-          - Connected aerodynamic simulation, control-model development, and physical launch experiments in a sim-to-real workflow.
 
     Manuscripts Under Review and Submitted:
       - title: Finite-State Visual Servo Control for Autonomous Target Landing of Low-Cost Underactuated Fixed-Wing Aircraft
@@ -132,10 +100,10 @@ cv:
         authors:
           - "**Yiwei Shu**"
           - Shuquan Wang
-        journal: 46th COSPAR Scientific Assembly 2026, oral presentation
+        journal: 46th COSPAR Scientific Assembly 2026, poster presentation
         date: 2026
         summary: >
-          **Yiwei Shu**, Shuquan Wang. Oral presentation at the *46th COSPAR
+          **Yiwei Shu**, Shuquan Wang. Poster presentation at the *46th COSPAR
           Scientific Assembly 2026*. Proposed a passive-rail, self-relocating
           space crawler and hierarchical reinforcement-learning framework for
           autonomous extended-workspace manipulation in deep-space outposts.
