@@ -7,7 +7,7 @@ subtitle: Ph.D. Student in Robotics | Autonomous Exploration, Planning, and Plan
 profile:
   align: right
   image: profile.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info:
     <p>Ph.D. Student in Robotics</p>
     <p>University of Chinese Academy of Sciences</p>
