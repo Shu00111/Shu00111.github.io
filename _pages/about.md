@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Autonomous robotic exploration, legged field robots, and planetary robotics.
+subtitle: Ph.D. Student in Robotics | Autonomous Exploration, Planning, and Planetary Robotics
 
 profile:
   align: right
