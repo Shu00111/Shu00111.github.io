@@ -5,7 +5,7 @@ permalink: /
 subtitle: Ph.D. Student in Robotics | Autonomous Exploration, Planning, and Planetary Robotics
 
 profile:
-  align: right
+  align: left
   image: profile.jpg
   image_circular: true # crops the image to make it circular
   more_info:
