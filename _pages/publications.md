@@ -24,3 +24,13 @@ nav_order: 2
 {% bibliography --query !@unpublished %}
 
 </div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.publications .links a[href^="/projects/"]').forEach((link) => {
+      const title = link.closest('li')?.querySelector('.title')?.textContent.trim() || 'project';
+      link.textContent = 'Project';
+      link.setAttribute('aria-label', `Open project page: ${title}`);
+    });
+  });
+</script>

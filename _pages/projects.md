@@ -3,7 +3,7 @@ layout: page
 title: projects
 permalink: /projects/
 description: Selected robotics research projects with experimental results and videos.
-nav: true
+nav: false
 nav_order: 3
 display_categories: [research]
 horizontal: false

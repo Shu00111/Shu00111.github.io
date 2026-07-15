@@ -5,7 +5,6 @@
     "image": "",
     "email": "shuyiwei24@mails.ucas.ac.cn",
     "url": "https://shu00111.github.io",
-    "summary": "Ph.D. student researching reliable autonomous exploration, active SLAM, risk-aware planning, reactive manipulation, and field and planetary robotics.",
     "location": {
       "city": "Beijing",
       "countryCode": "CN"
@@ -18,30 +17,6 @@
       }
     ]
   },
-  "work": [
-    {
-      "name": "Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences",
-      "position": "Ph.D. Researcher",
-      "location": "Beijing, China",
-      "startDate": "2024",
-      "endDate": "",
-      "summary": "Research on reliable autonomous exploration, active SLAM, risk-aware planning, reactive manipulation, and planetary robotics.",
-      "highlights": [
-        "Develop autonomous exploration systems for Unitree Go2 quadruped robots.",
-        "Build Isaac Lab lunar-terrain simulation and evaluation pipelines.",
-        "Research calibrated world models, sim-to-real navigation, and whole-arm manipulation."
-      ]
-    },
-    {
-      "name": "ShanghaiTech Automation and Robotics Center (STAR Center)",
-      "position": "Undergraduate Researcher",
-      "location": "Shanghai, China",
-      "startDate": "2022-09",
-      "endDate": "2024-06",
-      "summary": "Research on fixed-wing visual control, flight guidance, LiDAR mapping, and point-cloud registration.",
-      "highlights": []
-    }
-  ],
   "education": [
     {
       "institution": "University of Chinese Academy of Sciences",
@@ -98,7 +73,7 @@
     },
     {
       "name": "Learning-based Extended-workspace Manipulation: A Self-relocating Space Crawler for Autonomous Deep-space Outposts",
-      "publisher": "46th COSPAR Scientific Assembly 2026, oral presentation",
+      "publisher": "46th COSPAR Scientific Assembly 2026, poster presentation",
       "releaseDate": "2026",
       "summary": "Yiwei Shu and Shuquan Wang."
     },
