@@ -12,6 +12,15 @@ toc:
   sidebar: left
 ---
 
+<style>
+  @media (min-width: 992px) {
+    .container.mt-5:has(.cv) {
+      width: calc(100% - 48px);
+      max-width: 1200px;
+    }
+  }
+</style>
+
 {% assign cv = site.data.cv.cv %}
 
 <p class="text-right">
