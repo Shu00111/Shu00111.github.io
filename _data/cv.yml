@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Yiwei Shu
-  headline: Ph.D. Student in Robotics | Field and Planetary Robotics
+  # headline: Ph.D. Student in Robotics | Field and Planetary Robotics
   location: Beijing, China
   email: shuyiwei24@mails.ucas.ac.cn
   website: https://shu00111.github.io
@@ -35,7 +35,7 @@ cv:
       - institution: University of Illinois Urbana-Champaign
         area: Exchange Program
         degree: Exchange
-        start_date: 2023-01
+        start_date: 2022-12
         end_date: 2023-05
         location: Urbana, IL, USA
         highlights:
@@ -49,35 +49,35 @@ cv:
         journal: Manuscript under review at Aerospace Science and Technology
         date: 2026-06
         summary: >
-          **Yiwei Shu**, Shuquan Wang. Manuscript under review at *Aerospace
-          Science and Technology*. Proposed an IMU/monocular-camera finite-state visual servo
-          controller and validated it with CFD, randomized simulations, and real
-          flight tests; reduced final image-plane radial error from 0.5049 to
-          0.0027 against a sliding-mode baseline.
+          **Yiwei Shu**, Shuquan Wang.
+          1. Developed a finite-state visual servo controller that switches from IMU-guided ascent to monocular vision-guided descent, enabling autonomous target landing under limited sensing and weak control authority.
+          2. Independently designed, fabricated, and integrated the complete hardware testbed, including a 189 g underactuated fixed-wing aircraft, onboard electronics and actuation, and an adjustable catapult launcher. The aircraft cost only CNY 534 and required no GPS, airspeed sensor, or high-grade INS.
+          3. Validated the system through CFD-informed randomized simulations and real-world flight tests. Compared with a sliding-mode control baseline, it reduced final radial error by 99.5% and RMS error by 88.1%, while achieving a 100% landing success rate (20/20) versus 75% (15/20).
 
       - title: "From End-Effector Targets to Whole-Arm Postures: Configuration-Space Waypoint Recovery for Reactive Manipulation"
         authors:
           - "**Yiwei Shu**"
-          - et al.
-        journal: "Manuscript submitted to IEEE Robotics and Automation Letters (status: received)"
-        date: 2026-07
+          - Shuquan Wang
+        journal: Manuscript under review at IEEE Robotics and Automation Letters
+        date: 2026-05
         summary: >
-          **Yiwei Shu** et al. Manuscript submitted to *IEEE Robotics and
-          Automation Letters* (submission status: received). Introduced PostureWaypoint for online
-          configuration-space recovery; evaluated four manipulators across six
-          constrained 3D tasks and validated the method on an RM75 robot.
+          **Yiwei Shu**, Shuquan Wang.
+          1. Developed PostureWaypoint, a configuration-space recovery method that lifts Cartesian bypass targets into collision-free, joint-feasible whole-arm postures, eliminating posture ambiguity without global replanning or task-specific training.
+          2. Built an event-triggered framework integrating geometric-SDF bypass generation, SQP-based posture synthesis, posture-guided reactive control, and progress-preserving CBF filtering, running at 50 Hz with only 2.73 ms computation per step.
+          3. Evaluated the method on four manipulators and six constrained 3D tasks with 1,200 randomized episodes per method, achieving the highest mean whole-arm success rate of 70.2% (+5.5 percentage points over the best baseline). RM75 hardware tests achieved 100% success (20/20) in both real-robot tasks.
 
       - title: "RKILPlanner: Risk-based Kinematic Imitation Learning Planning Towards Human-Like Driving in Highway Scenarios"
         authors:
           - "**Yiwei Shu**"
           - Shuquan Wang
+          - Jun Li
         journal: Manuscript submitted to ROBIO 2026
         date: 2026
         summary: >
-          **Yiwei Shu**, Shuquan Wang. Manuscript submitted to *ROBIO 2026*.
-          Combined Driver's Risk Field maps, driver-style encoding, and
-          LSTM/CNN features in a differentiable kinematic imitation-learning
-          planner evaluated on the HighD naturalistic highway dataset.
+          **Yiwei Shu**, Shuquan Wang, Jun Li.
+          1. Developed RKILPlanner, a risk-aware kinematic imitation learning framework that unifies Driver's Risk Fields (DRF), personalized driving styles, and vehicle kinematics for human-like highway trajectory planning over a safety-critical 2.5 s horizon.
+          2. Built a three-branch end-to-end architecture that encodes 1 s trajectory histories with an LSTM, extracts local risk features with a CNN, and incorporates a five-dimensional driver-style vector. A differentiable kinematic layer converts acceleration and yaw-rate commands into smooth, physically feasible trajectories without post-processing.
+          3. Evaluated on 28,641 HighD samples, achieving an ADE of 0.159 m, FDE of 0.443 m, and a 0.3% miss rate. Compared with constant-velocity and Vanilla LSTM baselines, RKILPlanner reduced ADE by 23.7% and 65.8%, FDE by 23.1% and 40.4%, and the miss rate from 4.2% to 0.3%.
 
     Publications and Presentations:
       - title: "Expanding Grasp Reachability: Field-based Pose-constrained Two-stage Grasp Planning"
@@ -87,14 +87,13 @@ cv:
           - Jun Li
           - Hanying Sang
           - Yidong Ye
-        journal: ICoSR 2026, accepted full paper and oral presentation
+        journal: ICoSR 2026, oral presentation
         date: 2026-07
         summary: >
           **Yiwei Shu**, Shuquan Wang, Jun Li, Hanying Sang, and Yidong Ye.
-          Accepted full paper and oral presentation at *ICoSR 2026*. Developed
-          reachability and manipulability fields with a two-stage policy that
-          expands pose-constrained grasping near workspace boundaries; validated
-          in simulation and on a 7-DoF RM75 manipulator.
+          1. Developed a field-based pose-constrained grasp planner that models physical reachability, pose-constrained reachability, and pose-aware manipulability from robot kinematics to identify low-dexterity regions near workspace boundaries.
+          2. Designed a human-inspired two-stage policy that directly grasps feasible targets and otherwise sweeps objects into high-manipulability regions before constrained pickup. Offline field construction enables lightweight online queries and sweep-target selection.
+          3. Validated on a 7-DoF RM75 in simulation and hardware. The method achieved 27/30 boundary grasps versus 0/30 for direct picking, maintained 20/20 success in central regions, and expanded the real-world pose-constrained grasp radius by 50%, from 0.38 m to 0.57 m, without sim-to-real modification.
 
       - title: "Learning-based Extended-workspace Manipulation: A Self-relocating Space Crawler for Autonomous Deep-space Outposts"
         authors:
@@ -112,47 +111,47 @@ cv:
         authors:
           - "**Yiwei Shu**"
           - Shuquan Wang
-        journal: 44th Chinese Control Conference (CCC 2025)
+        journal: 44th Chinese Control Conference (CCC 2025), oral presentation
         date: 2025-07
         summary: >
-          **Yiwei Shu**, Shuquan Wang. Accepted for presentation and publication
-          in the proceedings of the *44th Chinese Control Conference (CCC
-          2025)*. Combined visual servoing, adaptive PID control, and Kalman
-          filtering for robust low-cost unpowered-aircraft attitude control.
+          **Yiwei Shu**, Shuquan Wang.
+          1. Developed a Kalman-filtered visual servo-PID controller for low-cost unpowered aircraft, enabling pitch-yaw regulation, trajectory correction, and precision landing under noisy conditions.
+          2. Designed a monocular-camera-only control pipeline that filters image-plane errors, adaptively tunes PID gains and noise covariances, and optimizes control parameters through a trajectory loss function, eliminating the need for GPS, IMUs, or high-cost navigation sensors.
+          3. Achieved the lowest average trajectory error of 1.3650 under Gaussian noise, reducing error by 48.4% versus sliding-mode control and 41.1% versus standard visual servoing, with smoother convergence, lower steady-state error and overshoot, and improved noise robustness.
 
     Projects:
-      - name: Reliable Autonomous Exploration for Unitree Go2
+      - name: Time-Efficient Multi-Gait Lunar Navigation for Unitree Go2
         start_date: 2026
         end_date: present
-        summary: Reliable active SLAM and navigation for quadruped robots in lunar-analogue and unstructured environments.
+        summary: Developing a goal-directed SLAM and adaptive locomotion framework for fast, reliable quadruped navigation across GPS-denied lunar terrain.
         highlights:
-          - Integrate LiDAR, depth sensing, grid-based mapping, and exploration planning for the Unitree Go2 platform.
-          - Build Isaac Lab lunar-terrain benchmarks and real-physics evaluation pipelines for legged navigation.
-          - Investigate calibrated world models, distribution shift, terrain traversability, and safe sim-to-real deployment.
+          - Integrate Livox Mid-360 LiDAR-inertial odometry, occupancy-grid mapping, and point-goal planning to navigate the Unitree Go2 toward specified lunar targets.
+          - Design a hybrid locomotion planner that switches between walking and jumping based on terrain traversability, shortcut gain, and execution risk, minimizing time-to-goal across craters, gaps, and ridges.
+          - Build 0.16g Isaac Lab lunar-terrain benchmarks and gait-conditioned world models to predict traversal cost, observation gain, and localization drift, evaluating time-to-goal, path length, success rate, and sim-to-real robustness.
 
-      - name: PostureWaypoint for Reactive Whole-Arm Manipulation
-        start_date: 2025
-        end_date: present
-        summary: Configuration-space waypoint recovery for online manipulation in cluttered and constrained workspaces.
-        highlights:
-          - Resolve end-effector waypoint ambiguity through whole-arm clearance, orientation consistency, and joint-feasibility constraints.
-          - Evaluate on RM75, Franka Panda, UR5e, and KUKA iiwa manipulators with simulation and real-robot experiments.
+      # - name: PostureWaypoint for Reactive Whole-Arm Manipulation
+      #   start_date: 2025
+      #   end_date: present
+      #   summary: Configuration-space waypoint recovery for online manipulation in cluttered and constrained workspaces.
+      #   highlights:
+      #     - Resolve end-effector waypoint ambiguity through whole-arm clearance, orientation consistency, and joint-feasibility constraints.
+      #     - Evaluate on RM75, Franka Panda, UR5e, and KUKA iiwa manipulators with simulation and real-robot experiments.
 
-      - name: Field-based Pose-constrained Two-stage Grasp Planning
-        start_date: 2025
-        end_date: 2026
-        summary: Reachability- and manipulability-aware grasp planning for objects near manipulator workspace boundaries.
-        highlights:
-          - Construct reachability and manipulability fields directly from the robot model.
-          - Use a sweep-then-pick policy when direct grasping is infeasible under strict pose constraints.
+      # - name: Field-based Pose-constrained Two-stage Grasp Planning
+      #   start_date: 2025
+      #   end_date: 2026
+      #   summary: Reachability- and manipulability-aware grasp planning for objects near manipulator workspace boundaries.
+      #   highlights:
+      #     - Construct reachability and manipulability fields directly from the robot model.
+      #     - Use a sweep-then-pick policy when direct grasping is infeasible under strict pose constraints.
 
-      - name: Autonomous Fixed-Wing Target Landing
-        start_date: 2023
-        end_date: 2026
-        summary: Low-cost visual-servo control for underactuated and unpowered fixed-wing aircraft.
-        highlights:
-          - Combine CFD-based aerodynamic characterization, IMU guidance, monocular visual servoing, and adaptive control.
-          - Validate controllers through randomized simulation and physical flight experiments.
+      # - name: Autonomous Fixed-Wing Target Landing
+      #   start_date: 2023
+      #   end_date: 2026
+      #   summary: Low-cost visual-servo control for underactuated and unpowered fixed-wing aircraft.
+      #   highlights:
+      #     - Combine CFD-based aerodynamic characterization, IMU guidance, monocular visual servoing, and adaptive control.
+      #     - Validate controllers through randomized simulation and physical flight experiments.
 
     Technical Skills:
       - label: Programming
@@ -165,10 +164,14 @@ cv:
         details: Git, Linux, SolidWorks, Altium Designer, ANSYS Fluent, Cadence, Vivado
 
     Selected Honors:
-      - bullet: Second Prize, East China Division, 6th National Undergraduate IC Innovation and Entrepreneurship Competition (2022)
-      - bullet: Second Prize, RoboMaster Eastern Division (2022)
+      - bullet: Outstanding Student Award, University of Chinese Academy of Sciences (2025-2026)
+      - bullet: Excellence Rising Star Award, UCAS Student Union (2025-2026; 2024-2025)
+      - bullet: Outstanding Student Leader Award, University of Chinese Academy of Sciences (2024-2025)
       - bullet: Third Prize, RoboMaster National Competition (2022)
+      - bullet: Second Prize, East China Division, 6th National Undergraduate IC Innovation and Entrepreneurship Competition (2022)
 
     Teaching and Leadership:
+      - bullet: "Department Head, Student Life and Culture, UCAS Student Union (2024-Present): lead department operations and coordinate campus cultural and student-life initiatives."
       - bullet: "Teaching Assistant, Digital Circuits, ShanghaiTech University (September-December 2022): led tutorials and assisted with grading."
       - bullet: "Sentry Team Lead, RoboMaster (2021-2023): coordinated embedded programming, PCB design, mechanical modeling, and team planning."
+      - bullet: "Volunteer Teacher, ShanghaiTech University Social Practice Program, Yunlong, Yunnan (Jul 2021): taught at a local primary school and conducted field research on local education conditions."
