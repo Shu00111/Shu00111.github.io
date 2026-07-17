@@ -83,6 +83,14 @@ toc:
         {% if section_title == 'Education' %}
           {% assign entries = section_entries %}
           {% include cv/education.liquid %}
+        {% elsif section_title == 'Manuscripts Under Review' %}
+          <div class="publications">
+            {% bibliography --query @unpublished %}
+          </div>
+        {% elsif section_title == 'Publications' %}
+          <div class="publications">
+            {% bibliography --query !@unpublished %}
+          </div>
         {% elsif section_title == 'Manuscripts Under Review and Submitted' or section_title == 'Publications and Presentations' %}
           {% assign entries = section_entries %}
           {% include cv/publications.liquid %}
@@ -107,3 +115,13 @@ toc:
 {% endfor %}
 
 </div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.cv .publications .links a[href^="/projects/"]').forEach((link) => {
+      const title = link.closest('li')?.querySelector('.title')?.textContent.trim() || 'project';
+      link.textContent = 'Project';
+      link.setAttribute('aria-label', `Open project page: ${title}`);
+    });
+  });
+</script>
