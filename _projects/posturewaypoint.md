@@ -35,7 +35,7 @@ PostureWaypoint lifts a locally generated task-space anchor into a **configurati
 
 The SQP refiner repeatedly convexifies the local nonlinear configuration-space problem. Each optimization point represents the complete articulated robot, so collision avoidance is enforced at the posture level rather than only at the end effector.
 
-{% include figure.liquid loading="lazy" path="assets/img/projects/posturewaypoint/cspace-synthesis.jpg" title="Local SQP refinement converts a colliding configuration into a feasible whole-arm recovery posture" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="lazy" path="assets/img/projects/posturewaypoint/final-SQP.png" title="Local SQP refinement converts a colliding configuration into a feasible whole-arm recovery posture" class="img-fluid rounded z-depth-1 w-75 d-block mx-auto" %}
 
 ## Cross-robot evaluation
 

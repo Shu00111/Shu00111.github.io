@@ -5,7 +5,7 @@ on:
       - main
       - master
     paths:
-      - "_data/cv.yml"
+      - "_data/cv_pdf.yml"
       - "assets/rendercv/design.yaml"
       - "assets/rendercv/locale.yaml"
       - "assets/rendercv/settings.yaml"
@@ -28,9 +28,9 @@ jobs:
           pip install -r requirements.txt
       - name: RenderCV
         run: |
-          cv_file=$(find _data  -maxdepth 1 -type f \( -name "cv.yaml" -o -name "cv.yml" \))
-          if [ -z "$cv_file" ]; then
-            echo "No cv.yml file found!"
+          cv_file="_data/cv_pdf.yml"
+          if [ ! -f "$cv_file" ]; then
+            echo "No PDF CV source found at $cv_file!"
             exit 1
           fi
           rendercv_dir=$(find assets -maxdepth 1 -type d -name "rendercv")

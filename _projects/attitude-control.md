@@ -9,7 +9,7 @@ category: research
 
 This work studies how a small unpowered aircraft can regulate pitch and yaw using only monocular image-plane feedback under strong measurement noise. It introduces a **Kalman-filtered visual servo-PID controller** with adaptive gains, dynamically adjusted noise covariances, and loss-based parameter optimization.
 
-> **Paper scope.** This page covers the simulation-focused paper published at **CCC 2025**. It is separate from the later [finite-state autonomous target-landing manuscript]({{ '/projects/fixed-wing-landing/' | relative_url }}), which combines IMU-guided ascent, vision-guided descent, custom hardware, and physical flight experiments.
+<!-- > **Paper scope.** This page covers the simulation-focused paper published at **CCC 2025**. -->
 
 {% include figure.liquid loading="eager" path="assets/img/projects/attitude-control/task-overview.jpg" title="Unpowered landing task and visual-servo objective: move the projected target to the image-plane origin" class="img-fluid rounded z-depth-1" %}
 
@@ -63,10 +63,10 @@ The Kalman filter brings noisy observations back toward the underlying trajector
 
 {% include figure.liquid loading="lazy" path="assets/img/projects/attitude-control/noise-robustness.jpg" title="Noisy measurements, Kalman state estimates, and optimized tracking under nominal and stronger Gaussian disturbances" class="img-fluid rounded z-depth-1" %}
 
-| Noise level    | Kalman PID-VSC | Optimized Kalman PID-VSC |
-| -------------- | -------------: | -----------------------: |
-| \(\sigma=0.2\) |         1.4213 |               **1.3650** |
-| \(\sigma=0.5\) |         2.7452 |               **2.7050** |
+| Noise level | Kalman PID-VSC | Optimized Kalman PID-VSC |
+| ----------- | -------------: | -----------------------: |
+| \sigma=0.2  |         1.4213 |               **1.3650** |
+| \sigma=0.5  |         2.7452 |               **2.7050** |
 
 These results establish the paper's specific contribution: an algorithmic improvement in simulated low-cost attitude regulation under noisy vision. They do not represent the later paper's finite-state controller or physical target-landing trials.
 

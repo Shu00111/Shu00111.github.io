@@ -42,23 +42,19 @@ cv:
           - Completed Quantum Physics, Data Science Discovery, and Statistical Analysis with A+ grades.
 
     Manuscripts Under Review:
+      - title: "From End-Effector Targets to Whole-Arm Postures: Configuration-Space Waypoint Recovery for Reactive Manipulation"
+        authors:
+          - "**Yiwei Shu**"
+          - et al.
+        journal: Manuscript under review at IEEE Robotics and Automation Letters
+        date: 2026
+
       - title: Finite-State Visual Servo Control for Autonomous Target Landing of Low-Cost Underactuated Fixed-Wing Aircraft
         authors:
           - "**Yiwei Shu**"
           - Shuquan Wang
         journal: Manuscript under review at Aerospace Science and Technology
         date: 2026
-        summary: >
-          **Yiwei Shu**, Shuquan Wang. Manuscript under review at *Aerospace Science and Technology*.
-
-      - title: "From End-Effector Targets to Whole-Arm Postures: Configuration-Space Waypoint Recovery for Reactive Manipulation"
-        authors:
-          - "**Yiwei Shu**"
-          - et al.
-        journal: "Manuscript submitted to IEEE Robotics and Automation Letters (submission status: received)"
-        date: 2026
-        summary: >
-          **Yiwei Shu** et al. Manuscript submitted to *IEEE Robotics and Automation Letters* (submission status: received).
 
       - title: "RKILPlanner: Risk-based Kinematic Imitation Learning Planning Towards Human-Like Driving in Highway Scenarios"
         authors:
@@ -66,8 +62,6 @@ cv:
           - Shuquan Wang
         journal: Manuscript submitted to ROBIO 2026
         date: 2026
-        summary: >
-          **Yiwei Shu**, Shuquan Wang. Manuscript submitted to *ROBIO 2026*.
 
     Publications:
       - title: "Expanding Grasp Reachability: Field-based Pose-constrained Two-stage Grasp Planning"

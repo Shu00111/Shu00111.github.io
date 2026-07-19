@@ -9,7 +9,7 @@ category: research
 
 How accurately can a lightweight fixed-wing aircraft land on a designated target when it cannot hover, has no propulsion after launch, and carries only low-cost sensing? This project develops a complete solution—from aerodynamic modeling and controller design to custom hardware and repeated flight tests—for autonomous target landing without GPS, airspeed sensing, or high-grade inertial navigation.
 
-> **Paper scope.** This page covers the finite-state target-landing manuscript under review at _Aerospace Science and Technology_, including the custom platform and physical landing experiments. The earlier simulation-focused [CCC 2025 attitude-control paper]({{ '/projects/attitude-control/' | relative_url }}) is a separate publication.
+<!-- > **Paper scope.** This page covers the finite-state target-landing manuscript under review at _Aerospace Science and Technology_, including the custom platform and physical landing experiments. The earlier simulation-focused [CCC 2025 attitude-control paper]({{ '/projects/attitude-control/' | relative_url }}) is a separate publication. -->
 
 {% include figure.liquid loading="eager" path="assets/img/projects/fixed-wing-landing/system-overview.jpg" title="Two-phase autonomous landing system: IMU-guided ascent followed by camera-guided descent" class="img-fluid rounded z-depth-1" %}
 
@@ -36,7 +36,7 @@ The finite-state machine uses the measured pitch sign to switch between attitude
 The controller runs entirely onboard: IMU feedback is processed at **250 Hz**, while the servos accept commands at **333 Hz**. The same compact OpenMV-based sensing and computing unit handles the camera, inertial measurements, state transition, and actuator commands.
 
 <div class="col-md-7 mx-auto">
-{% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/finite-state-controller.jpg" title="Finite-state logic for switching from IMU pose control to monocular visual-servo position control" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/finite-state-controller.jpg" title="Finite-state logic for switching from IMU pose control to monocular visual-servo position control" class="img-fluid rounded z-depth-1 w-50 d-block mx-auto" %}
 </div>
 
 ## Custom low-cost hardware
@@ -45,10 +45,10 @@ I designed and built the complete experimental hardware stack, including the **2
 
 <div class="row align-items-center">
   <div class="col-md-7">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/aircraft-electronics.jpg" title="Custom aircraft, forward-facing camera, and compact onboard electronics" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/aircraft-electronics.jpg" title="Custom aircraft, forward-facing camera, and compact onboard electronics" class="img-fluid rounded z-depth-1 w-75 d-block mx-auto" %}
   </div>
   <div class="col-md-5">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/catapult-launcher.jpg" title="Adjustable launcher used to produce repeatable high-speed initial conditions" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/catapult-launcher.jpg" title="Adjustable launcher used to produce repeatable high-speed initial conditions" class="img-fluid rounded z-depth-1 w-75 d-block mx-auto" %}
   </div>
 </div>
 
@@ -56,7 +56,7 @@ I designed and built the complete experimental hardware stack, including the **2
 
 Because control-surface authority varies with flight condition, aerodynamic behavior was first characterized through CFD. The resulting lift, drag, and lateral-force trends were incorporated into a six-degree-of-freedom simulation so that controller development reflected the behavior of the physical aircraft rather than an idealized kinematic model.
 
-{% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/cfd-flow-development.jpg" title="CFD snapshots showing airflow development around the aircraft" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/cfd-flow-development.jpg" title="CFD snapshots showing airflow development around the aircraft" class="img-fluid rounded z-depth-1 w-75 d-block mx-auto" %}
 
 The simulation pipeline randomizes launch position, attitude, and velocity and explicitly models airflow disturbances, sensing noise, hardware delay, and aerodynamic uncertainty. This makes the evaluation a robustness test across realistic initial conditions rather than a single nominal trajectory.
 
@@ -74,7 +74,7 @@ Across randomized trials, the proposed visual-servo controller (VSC) substantial
 
 The trajectory plots below show the practical difference: the baseline approaches the image center inconsistently, whereas VSC concentrates the terminal trajectories tightly around the target.
 
-{% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/landing-outcomes.jpg" title="Image-plane trajectories over 20 trials: sliding-mode baseline (left) and proposed visual-servo control (right)" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/landing-outcomes.jpg" title="Image-plane trajectories over 20 trials: sliding-mode baseline (left) and proposed visual-servo control (right)" class="img-fluid rounded z-depth-1 w-75 d-block mx-auto" %}
 
 ## Physical flight validation
 
