@@ -2,7 +2,7 @@
 layout: page
 permalink: /cv/
 title: CV
-nav: true
+nav: false
 nav_order: 5
 cv_pdf: /assets/rendercv/rendercv_output/Yiwei_Shu_CV.pdf
 cv_format: rendercv # options: rendercv, jsonresume
@@ -61,6 +61,12 @@ toc:
               <td class="p-1 pl-2 font-weight-light"><a href="mailto:{{ cv.email }}">{{ cv.email }}</a></td>
             </tr>
           {% endif %}
+          {% if cv.phone %}
+            <tr>
+              <td class="p-1 pr-2 font-weight-bold"><b>Phone</b></td>
+              <td class="p-1 pl-2 font-weight-light">{{ cv.phone }}</td>
+            </tr>
+          {% endif %}
           {% if cv.location %}
             <tr>
               <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
@@ -92,6 +98,9 @@ toc:
         {% if section_title == 'Education' %}
           {% assign entries = section_entries %}
           {% include cv/education.liquid %}
+        {% elsif section_title == 'Research Experience' or section_title == 'Leadership and Service' %}
+          {% assign entries = section_entries %}
+          {% include cv/experience.liquid %}
         {% elsif section_title == 'Manuscripts Under Review' %}
           <div class="publications">
             {% bibliography --query @unpublished %}

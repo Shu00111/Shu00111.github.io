@@ -1,9 +1,10 @@
+# Web CV source, synchronized with docs/YiweiShuCV.pdf.
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Yiwei Shu
-  # headline: Ph.D. Student in Robotics | Field and Planetary Robotics
   location: Beijing, China
   email: shuyiwei24@mails.ucas.ac.cn
+  phone: (+86) 159-9812-9699
   website: https://shu00111.github.io
   photo: ../assets/img/profile-cv.jpg
 
@@ -14,14 +15,14 @@ cv:
   sections:
     Education:
       - institution: University of Chinese Academy of Sciences
-        area: Robotics and Space Robotics
+        area: Computer Science and Technology
         degree: Ph.D.
-        start_date: 2024
+        start_date: 2024-09
         end_date: present
         location: Beijing, China
         highlights:
-          - Affiliated with the Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences.
-          - Research on autonomous exploration, legged field robots, active SLAM, motion planning, and planetary robotics.
+          - Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences.
+          - Research focus on optimization-based navigation and autonomous exploration for legged robots in complex and planetary environments, with emphasis on risk-aware planning, multi-gait decision-making, and active perception.
 
       - institution: ShanghaiTech University
         area: Electronic Information Engineering
@@ -29,125 +30,110 @@ cv:
         start_date: 2020-09
         end_date: 2024-06
         location: Shanghai, China
-        highlights:
-          - Undergraduate research in robotics, visual control, point-cloud registration, medical imaging, and integrated-circuit design.
 
       - institution: University of Illinois Urbana-Champaign
         area: Exchange Program
         degree: Exchange
         start_date: 2022-12
         end_date: 2023-05
-        location: Urbana, IL, USA
+        location: IL, United States
         highlights:
-          - Completed Quantum Physics, Data Science Discovery, and Statistical Analysis with A+ grades.
+          - Exchange student; earned grades of A or A+ in all courses.
+
+    Research Experience:
+      - company: Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences
+        position: Optimization-Based Multi-Gait Navigation for Quadruped Robots in Lunar Environments
+        start_date: 2026-07
+        end_date: present
+        highlights:
+          - Develop a goal-directed navigation framework that jointly coordinates autonomous exploration and adaptive locomotion for time-efficient traversal of GPS-denied lunar terrain.
+          - Integrate LiDAR-inertial state estimation, occupancy-grid mapping, active perception, and risk-aware point-goal planning on the Unitree Go2.
+          - Formulate gait-conditioned planning models that jointly optimize traversal time, stability, energy consumption, and terrain risk.
+          - Build reduced-gravity simulation benchmarks in Isaac Lab for multi-gait policy evaluation, uncertainty analysis, and sim-to-real transfer.
 
     Manuscripts Under Review:
-      - title: "From End-Effector Targets to Whole-Arm Postures: Configuration-Space Waypoint Recovery for Reactive Manipulation"
-        authors:
-          - "**Yiwei Shu**"
-          - et al.
-        journal: Manuscript under review at IEEE Robotics and Automation Letters
+      - name: "From End-Effector Targets to Whole-Arm Postures: Configuration-Space Waypoint Recovery for Reactive Manipulation"
         date: 2026
+        summary: "**Yiwei Shu**, Shuquan Wang. *Under review at IEEE Robotics and Automation Letters*."
+        highlights:
+          - Developed PostureWaypoint, which lifts Cartesian bypass targets into collision-free, joint-feasible whole-arm configurations, resolving posture ambiguity without global replanning or task-specific training.
+          - Formulated an event-triggered pipeline combining geometric SDF-based bypass generation, SQP/Gauss-Newton posture synthesis, posture-guided reactive control, and a progress-preserving CBF-QP safety filter; the complete framework runs at 50 Hz with 2.73 ms average computation per step.
+          - Evaluated on four manipulators and six constrained 3D tasks across 1,200 randomized episodes per method, achieving the highest mean whole-arm success rate of 70.2%, 5.5 percentage points above the strongest baseline. RM75 hardware tests achieved 20/20 success in both real-robot tasks.
 
-      - title: Finite-State Visual Servo Control for Autonomous Target Landing of Low-Cost Underactuated Fixed-Wing Aircraft
-        authors:
-          - "**Yiwei Shu**"
-          - Shuquan Wang
-        journal: Manuscript under review at Aerospace Science and Technology
+      - name: Finite-State Visual Servo Control for Autonomous Target Landing of Low-Cost Underactuated Fixed-Wing Aircraft
         date: 2026
+        summary: "**Yiwei Shu**, Shuquan Wang. *Under review at Aerospace Science and Technology*."
+        highlights:
+          - Developed a finite-state controller that decomposes short-duration unpowered landing into IMU-guided ascent and monocular vision-guided descent, enabling target landing under limited sensing and weak control authority.
+          - Independently designed and integrated a 189 g aircraft, onboard electronics, control-surface actuation, and an adjustable catapult launcher; the complete platform had a total hardware cost of CNY 534 and required no GPS, airspeed sensor, or high-grade inertial navigation system.
+          - Established a CFD-informed simulation-to-flight pipeline with randomized disturbances, noise, delay, and aerodynamic uncertainty; reduced the normalized final image-plane radial error from 0.5049 to 0.0027 and the RMS error from 1.4526 to 0.1732 in simulation, while achieving 20/20 real-world landings.
 
-      - title: "RKILPlanner: Risk-based Kinematic Imitation Learning Planning Towards Human-Like Driving in Highway Scenarios"
-        authors:
-          - "**Yiwei Shu**"
-          - Shuquan Wang
-        journal: Manuscript submitted to ROBIO 2026
+      - name: "RKILPlanner: Risk-Based Kinematic Imitation Learning Planning Towards Human-Like Driving in Highway Scenarios"
         date: 2026
+        summary: "**Yiwei Shu**, Shuquan Wang, Jun Li. *Submitted to ROBIO 2026*."
+        highlights:
+          - Developed a risk-aware imitation-learning planner that integrates Driver's Risk Fields, personalized driving styles, and differentiable vehicle kinematics for physically feasible highway trajectory generation.
+          - Evaluated on 28,641 HighD samples, achieving 0.159 m ADE, 0.443 m FDE, and a 0.3% miss rate over a safety-critical 2.5 s planning horizon.
 
     Publications:
-      - title: "Expanding Grasp Reachability: Field-based Pose-constrained Two-stage Grasp Planning"
-        authors:
-          - "**Yiwei Shu**"
-          - Shuquan Wang
-          - Jun Li
-          - Hanying Sang
-          - Yidong Ye
-        journal: 2026 5th International Conference on Service Robotics (ICoSR 2026)
+      - name: "Expanding Grasp Reachability: Field-Based Pose-Constrained Two-Stage Grasp Planning"
         date: 2026
-        summary: >
-          **Yiwei Shu**, Shuquan Wang, Jun Li, Hanying Sang, and Yidong Ye.
-          Accepted full paper and oral presentation at the *2026 5th International Conference on Service Robotics (ICoSR 2026)*.
-
-      - title: "Learning-based Extended-workspace Manipulation: A Self-relocating Space Crawler for Autonomous Deep-space Outposts"
-        authors:
-          - "**Yiwei Shu**"
-          - Shuquan Wang
-        journal: 46th COSPAR Scientific Assembly
-        date: 2026
-        summary: >
-          **Yiwei Shu**, Shuquan Wang. Poster presentation at the *46th COSPAR Scientific Assembly*.
-
-      - title: Attitude Control of Unpowered Aircraft in Flight Based on Kalman Filter Visual Servo-PID Optimization Algorithm
-        authors:
-          - "**Yiwei Shu**"
-          - Shuquan Wang
-        journal: Proceedings of the 44th Chinese Control Conference (CCC 2025)
-        date: 2025
-        summary: >
-          **Yiwei Shu**, Shuquan Wang. Accepted for presentation and publication in the *Proceedings of the 44th Chinese Control Conference (CCC 2025)*.
-
-    Projects:
-      - name: Time-Efficient Multi-Gait Lunar Navigation for Unitree Go2
-        start_date: 2026
-        end_date: present
-        summary: Developing a goal-directed SLAM and adaptive locomotion framework for fast, reliable quadruped navigation across GPS-denied lunar terrain.
+        summary: "**Yiwei Shu**, Shuquan Wang, Jun Li, Hanying Sang, Yidong Ye. *ICoSR 2026, accepted full paper and oral presentation*."
         highlights:
-          - Integrate Livox Mid-360 LiDAR-inertial odometry, occupancy-grid mapping, and point-goal planning to navigate the Unitree Go2 toward specified lunar targets.
-          - Design a hybrid locomotion planner that switches between walking and jumping based on terrain traversability, shortcut gain, and execution risk, minimizing time-to-goal across craters, gaps, and ridges.
-          - Build 0.16g Isaac Lab lunar-terrain benchmarks and gait-conditioned world models to predict traversal cost, observation gain, and localization drift, evaluating time-to-goal, path length, success rate, and sim-to-real robustness.
+          - Developed a field-based two-stage grasp planner that uses reachability and pose-aware manipulability models to relocate difficult targets into more dexterous regions before pickup.
+          - Validated on a 7-DoF RM75 in simulation and hardware, achieving 27/30 boundary grasps versus 0/30 for direct picking and expanding the real-world pose-constrained grasp radius from 0.38 m to 0.57 m.
 
-      # - name: PostureWaypoint for Reactive Whole-Arm Manipulation
-      #   start_date: 2025
-      #   end_date: present
-      #   summary: Configuration-space waypoint recovery for online manipulation in cluttered and constrained workspaces.
-      #   highlights:
-      #     - Resolve end-effector waypoint ambiguity through whole-arm clearance, orientation consistency, and joint-feasibility constraints.
-      #     - Evaluate on RM75, Franka Panda, UR5e, and KUKA iiwa manipulators with simulation and real-robot experiments.
+      - name: "Learning-Based Extended-Workspace Manipulation: A Self-Relocating Space Crawler for Autonomous Deep-Space Outposts"
+        date: 2026
+        summary: "**Yiwei Shu**, Shuquan Wang. *46th COSPAR Scientific Assembly, poster presentation*."
+        highlights:
+          - Developed a MuJoCo-based self-relocating space-crawler framework that alternates anchor selection, inverse-kinematics-driven grasping, base translation, and target manipulation to extend the reachable workspace of an orbital servicing robot.
+          - Investigated learning-based anchor selection for autonomous relocation and manipulation in deep-space assembly and outpost construction scenarios.
 
-      # - name: Field-based Pose-constrained Two-stage Grasp Planning
-      #   start_date: 2025
-      #   end_date: 2026
-      #   summary: Reachability- and manipulability-aware grasp planning for objects near manipulator workspace boundaries.
-      #   highlights:
-      #     - Construct reachability and manipulability fields directly from the robot model.
-      #     - Use a sweep-then-pick policy when direct grasping is infeasible under strict pose constraints.
+      - name: Attitude Control of Unpowered Aircraft in Flight Based on Kalman Filter Visual Servo-PID Optimization Algorithm
+        date: 2025
+        summary: "**Yiwei Shu**, Shuquan Wang. *44th Chinese Control Conference (CCC 2025), accepted full paper and oral presentation*."
+        highlights:
+          - Developed a Kalman-filtered visual servo-PID controller for low-cost unpowered aircraft, enabling robust attitude regulation and trajectory correction using only monocular visual feedback.
+          - Reduced the average trajectory error under Gaussian noise to 1.3650, outperforming sliding-mode control and standard visual servoing by 48.4% and 41.1%, respectively.
 
-      # - name: Autonomous Fixed-Wing Target Landing
-      #   start_date: 2023
-      #   end_date: 2026
-      #   summary: Low-cost visual-servo control for underactuated and unpowered fixed-wing aircraft.
-      #   highlights:
-      #     - Combine CFD-based aerodynamic characterization, IMU guidance, monocular visual servoing, and adaptive control.
-      #     - Validate controllers through randomized simulation and physical flight experiments.
-
-    Technical Skills:
+    Skills:
       - label: Programming
-        details: Python, MATLAB, C, C++, R, Verilog, LaTeX
-      - label: Robotics
-        details: ROS/ROS 2, PCL, Unitree Go2, RM75, STM32, LiDAR and depth sensing
-      - label: Simulation and Learning
-        details: Isaac Lab, MuJoCo, PyTorch, scikit-learn, numerical simulation
+        details: Python, C, C++, R, Verilog
+      - label: Robotics & Simulation
+        details: ROS/ROS 2, PCL, Isaac Lab, MuJoCo, PyTorch, Unitree Go2, RM75
       - label: Engineering Tools
-        details: Git, Linux, SolidWorks, Altium Designer, ANSYS Fluent, Cadence, Vivado
+        details: Linux, Git, STM32, SolidWorks, Altium Designer, XFlow, Cadence, Vivado
 
-    Selected Honors:
+    Leadership and Service:
+      - company: UCAS Student Union
+        position: Department Head, Student Life and Culture
+        start_date: 2024
+        end_date: present
+        highlights:
+          - Lead department operations and coordinate university-wide cultural programs, student-life initiatives, and major campus events.
+
+      - company: ShanghaiTech RoboMaster Team
+        position: Sentry Team Lead
+        start_date: 2021
+        end_date: 2024
+        highlights:
+          - Coordinated embedded programming, PCB design, mechanical modeling, and team planning for the autonomous sentry robot.
+
+      - company: ShanghaiTech University
+        position: Teaching Assistant, Digital Circuit Course
+        highlights:
+          - Led tutorials, answered technical questions, and assisted with assignment and examination grading.
+
+      - company: ShanghaiTech University Social Practice Program
+        position: Volunteer Teacher
+        date: 2021
+        highlights:
+          - Taught at a local primary school and conducted field research on local education conditions.
+
+    Honors and Awards:
       - bullet: Outstanding Student Award, University of Chinese Academy of Sciences (2025-2026)
       - bullet: Excellence Rising Star Award, UCAS Student Union (2025-2026; 2024-2025)
       - bullet: Outstanding Student Leader Award, University of Chinese Academy of Sciences (2024-2025)
-      - bullet: Third Prize, RoboMaster National Competition (2022)
-      - bullet: Second Prize, East China Division, 6th National Undergraduate IC Innovation and Entrepreneurship Competition (2022)
-
-    Teaching and Leadership:
-      - bullet: "Department Head, Student Life and Culture, UCAS Student Union (2024-Present): lead department operations and coordinate campus cultural and student-life initiatives."
-      - bullet: "Teaching Assistant, Digital Circuits, ShanghaiTech University (September-December 2022): led tutorials and assisted with grading."
-      - bullet: "Sentry Team Lead, RoboMaster (2021-2023): coordinated embedded programming, PCB design, mechanical modeling, and team planning."
-      - bullet: "Volunteer Teacher, ShanghaiTech University Social Practice Program, Yunlong, Yunnan (Jul 2021): taught at a local primary school and conducted field research on local education conditions."
+      - bullet: The 6th National Undergraduate IC Innovation and Entrepreneurship Competition Second Prize in the East China Competition Area (2022)
+      - bullet: RoboMaster Competition, National 3rd Award and Eastern Division 2nd Award (2022)
