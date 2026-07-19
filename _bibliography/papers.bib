@@ -1,37 +1,37 @@
 ---
 ---
 
-@unpublished{shu2026finite,
-  abbr     = {Under Review},
-  title    = {Finite-State Visual Servo Control for Autonomous Target Landing of Low-Cost Underactuated Fixed-Wing Aircraft},
-  author   = {Shu, Yiwei and Wang, Shuquan},
-  year     = {2026},
-  month    = jun,
-  note     = {Manuscript under review at Aerospace Science and Technology},
-  preview  = {finite-state-visual-servo.jpg},
-  website  = {/projects/fixed-wing-landing/},
-  selected = {true}
-}
-
 @unpublished{shu2026posturewaypoint,
   abbr     = {Under Review},
   title    = {From End-Effector Targets to Whole-Arm Postures: Configuration-Space Waypoint Recovery for Reactive Manipulation},
-  author   = {Shu, Yiwei and others},
+  author   = {Shu, Yiwei and Wang, Shuquan},
   year     = {2026},
   month    = jul,
-  note     = {Manuscript under review at IEEE Robotics and Automation Letters},
+  note     = {Under review at IEEE Robotics and Automation Letters.<ul class="items mt-2"><li>Developed PostureWaypoint to lift Cartesian bypass targets into collision-free, joint-feasible whole-arm configurations without global replanning or task-specific training.</li><li>Combined SDF-based bypass generation, SQP/Gauss-Newton posture synthesis, reactive control, and a progress-preserving CBF-QP safety filter in a 50 Hz pipeline averaging 2.73 ms per step.</li><li>Achieved a 70.2 percent mean whole-arm success rate across four manipulators and six tasks, with 20/20 success in both RM75 hardware tasks.</li></ul>},
   preview  = {posturewaypoint.jpg},
   video    = {/assets/video/posturewaypoint-demo.mp4},
   website  = {/projects/posturewaypoint/},
   selected = {true}
 }
 
-@unpublished{shu2026rkilplanner,
-  abbr     = {Submitted},
-  title    = {{RKILPlanner}: Risk-based Kinematic Imitation Learning Planning Towards Human-Like Driving in Highway Scenarios},
+@unpublished{shu2026finite,
+  abbr     = {Under Review},
+  title    = {Finite-State Visual Servo Control for Autonomous Target Landing of Low-Cost Underactuated Fixed-Wing Aircraft},
   author   = {Shu, Yiwei and Wang, Shuquan},
   year     = {2026},
-  note     = {Manuscript submitted to ROBIO 2026},
+  month    = jun,
+  note     = {Under review at Aerospace Science and Technology.<ul class="items mt-2"><li>Developed a finite-state controller that switches from IMU-guided ascent to monocular vision-guided descent for target landing under limited sensing and weak control authority.</li><li>Designed and integrated a 189 g aircraft, onboard electronics, actuation, and adjustable launcher for CNY 534 without GPS, an airspeed sensor, or high-grade inertial navigation.</li><li>Built a CFD-informed simulation-to-flight pipeline that reduced normalized final image-plane radial error from 0.5049 to 0.0027 and achieved 20/20 real-world landings.</li></ul>},
+  preview  = {finite-state-visual-servo.jpg},
+  website  = {/projects/fixed-wing-landing/},
+  selected = {true}
+}
+
+@unpublished{shu2026rkilplanner,
+  abbr     = {Submitted},
+  title    = {{RKILPlanner}: Risk-Based Kinematic Imitation Learning Planning Towards Human-Like Driving in Highway Scenarios},
+  author   = {Shu, Yiwei and Wang, Shuquan and Li, Jun},
+  year     = {2026},
+  note     = {Submitted to ROBIO 2026.<ul class="items mt-2"><li>Integrated Driver's Risk Fields, personalized driving styles, and differentiable vehicle kinematics for risk-aware, physically feasible highway trajectory generation.</li><li>Evaluated on 28,641 HighD samples, achieving 0.159 m ADE, 0.443 m FDE, and a 0.3 percent miss rate over a safety-critical 2.5 s planning horizon.</li></ul>},
   preview  = {rkilplanner.jpg},
   video    = {/assets/video/rkilplanner-demo.mp4},
   website  = {/projects/rkilplanner/},
@@ -40,12 +40,12 @@
 
 @inproceedings{shu2026grasp,
   abbr      = {ICoSR},
-  title     = {Expanding Grasp Reachability: Field-based Pose-constrained Two-stage Grasp Planning},
+  title     = {Expanding Grasp Reachability: Field-Based Pose-Constrained Two-Stage Grasp Planning},
   author    = {Shu, Yiwei and Wang, Shuquan and Li, Jun and Sang, Hanying and Ye, Yidong},
   booktitle = {2026 5th International Conference on Service Robotics (ICoSR 2026)},
   year      = {2026},
   month     = jul,
-  note      = {Accepted and oral presentation},
+  note      = {Accepted full paper and oral presentation.<ul class="items mt-2"><li>Developed a field-based two-stage planner that uses reachability and pose-aware manipulability models to relocate difficult targets into more dexterous regions before pickup.</li><li>Achieved 27/30 boundary grasps on a 7-DoF RM75 versus 0/30 for direct picking and expanded the real-world pose-constrained grasp radius from 0.38 m to 0.57 m.</li></ul>},
   preview   = {direct-vs-two-stage.jpg},
   website   = {/projects/grasp-planning/},
   selected  = {true}
@@ -53,11 +53,11 @@
 
 @inproceedings{shu2026crawler,
   abbr      = {COSPAR},
-  title     = {Learning-based Extended-workspace Manipulation: A Self-relocating Space Crawler for Autonomous Deep-space Outposts},
+  title     = {Learning-Based Extended-Workspace Manipulation: A Self-Relocating Space Crawler for Autonomous Deep-Space Outposts},
   author    = {Shu, Yiwei and Wang, Shuquan},
   booktitle = {46th COSPAR Scientific Assembly},
   year      = {2026},
-  note      = {Accepted and poster presentation},
+  note      = {Poster presentation.<ul class="items mt-2"><li>Developed a MuJoCo-based self-relocating crawler that alternates anchor selection, inverse-kinematics-driven grasping, base translation, and target manipulation to extend an orbital robot's workspace.</li><li>Investigated learning-based anchor selection for autonomous relocation and manipulation in deep-space assembly and outpost construction scenarios.</li></ul>},
   selected  = {false}
 }
 
@@ -68,7 +68,7 @@
   booktitle = {44th Chinese Control Conference (CCC 2025)},
   year      = {2025},
   month     = jul,
-  note      = {Accepted and oral presentation},
+  note      = {Accepted full paper and oral presentation.<ul class="items mt-2"><li>Developed a Kalman-filtered visual servo-PID controller for robust attitude regulation and trajectory correction using only monocular visual feedback.</li><li>Reduced average trajectory error under Gaussian noise to 1.3650, outperforming sliding-mode control and standard visual servoing by 48.4 percent and 41.1 percent, respectively.</li></ul>},
   preview   = {attitude-control.jpg},
   website   = {/projects/attitude-control/},
   selected  = {false}
