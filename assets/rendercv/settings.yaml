@@ -2,7 +2,7 @@
 settings:
   current_date: today
   render_command:
-    # Paths must be relative to _data/cv.yml
+    # Paths must be relative to _data/cv_pdf.yml
     typst_path: ../assets/rendercv/rendercv_output/NAME_IN_SNAKE_CASE_CV.typ
     pdf_path: ../assets/rendercv/rendercv_output/NAME_IN_SNAKE_CASE_CV.pdf
     markdown_path: ../assets/rendercv/rendercv_output/NAME_IN_SNAKE_CASE_CV.md
