@@ -20,13 +20,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Preserve an explicitly supplied PDF
+        id: render_source
+        shell: bash
+        run: |
+          render=true
+          if [ "${{ github.event_name }}" = "push" ] && \
+             git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" -- | \
+               grep -Fxq "assets/rendercv/rendercv_output/Yiwei_Shu_CV.pdf"; then
+            render=false
+            echo "The pushed PDF is authoritative; skipping automatic regeneration."
+          fi
+          echo "render=$render" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-python@v5
+        if: steps.render_source.outputs.render == 'true'
         with:
           python-version: "3.12"
       - name: Install RenderCV
+        if: steps.render_source.outputs.render == 'true'
         run: |
           pip install -r requirements.txt
       - name: RenderCV
+        if: steps.render_source.outputs.render == 'true'
         run: |
           cv_file="_data/cv_pdf.yml"
           if [ ! -f "$cv_file" ]; then
