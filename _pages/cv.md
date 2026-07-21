@@ -111,7 +111,11 @@ toc:
                       {% assign service_date = entry.date %}
                     {% else %}
                       {% assign service_start = entry.start_date | split: '-' | first %}
-                      {% assign service_end = entry.end_date | split: '-' | first | default: 'Present' %}
+                      {% assign service_end = entry.end_date | split: '-' | first %}
+                      {% if service_end == 'present' %}
+                        {% assign service_end = 'Present' %}
+                      {% endif %}
+                      {% assign service_end = service_end | default: 'Present' %}
                       {% assign service_date = service_start | append: ' - ' | append: service_end %}
                     {% endif %}
                     <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
