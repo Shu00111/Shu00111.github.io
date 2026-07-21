@@ -36,7 +36,7 @@ The finite-state machine uses the measured pitch sign to switch between attitude
 The controller runs entirely onboard: IMU feedback is processed at **250 Hz**, while the servos accept commands at **333 Hz**. The same compact OpenMV-based sensing and computing unit handles the camera, inertial measurements, state transition, and actuator commands.
 
 <div class="col-md-7 mx-auto">
-{% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/finite-state-controller.jpg" title="Finite-state logic for switching from IMU pose control to monocular visual-servo position control" class="img-fluid rounded z-depth-1 w-50 d-block mx-auto" %}
+{% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/finite-state-controller.jpg" title="Finite-state logic for switching from IMU pose control to monocular visual-servo position control" class="img-fluid rounded z-depth-1 d-block mx-auto" %}
 </div>
 
 ## Custom low-cost hardware
@@ -45,10 +45,10 @@ I designed and built the complete experimental hardware stack, including the **2
 
 <div class="row align-items-center">
   <div class="col-md-7">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/aircraft-electronics.jpg" title="Custom aircraft, forward-facing camera, and compact onboard electronics" class="img-fluid rounded z-depth-1 w-75 d-block mx-auto" %}
+    {% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/aircraft-electronics.jpg" title="Custom aircraft, forward-facing camera, and compact onboard electronics" class="img-fluid rounded z-depth-1 d-block mx-auto" %}
   </div>
   <div class="col-md-5">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/catapult-launcher.jpg" title="Adjustable launcher used to produce repeatable high-speed initial conditions" class="img-fluid rounded z-depth-1 w-75 d-block mx-auto" %}
+    {% include figure.liquid loading="lazy" path="assets/img/projects/fixed-wing-landing/catapult-launcher.jpg" title="Adjustable launcher used to produce repeatable high-speed initial conditions" class="img-fluid rounded z-depth-1 d-block mx-auto" %}
   </div>
 </div>
 
