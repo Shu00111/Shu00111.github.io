@@ -98,9 +98,47 @@ toc:
         {% if section_title == 'Education' %}
           {% assign entries = section_entries %}
           {% include cv/education.liquid %}
-        {% elsif section_title == 'Research Experience' or section_title == 'Leadership and Service' %}
+        {% elsif section_title == 'Research Experience' %}
           {% assign entries = section_entries %}
           {% include cv/experience.liquid %}
+        {% elsif section_title == 'Leadership and Service' %}
+          <ul class="card-text font-weight-light list-group list-group-flush">
+            {% for entry in section_entries %}
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+                    {% if entry.date %}
+                      {% assign service_date = entry.date %}
+                    {% else %}
+                      {% assign service_start = entry.start_date | split: '-' | first %}
+                      {% assign service_end = entry.end_date | split: '-' | first %}
+                      {% if service_end == 'present' %}
+                        {% assign service_end = 'Present' %}
+                      {% endif %}
+                      {% assign service_end = service_end | default: 'Present' %}
+                      {% assign service_date = service_start | append: ' - ' | append: service_end %}
+                    {% endif %}
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+                      {{ service_date }}
+                    </span>
+                  </div>
+                  <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+                    <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.position }}</h6>
+                    <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.company }}</h6>
+                    {% if entry.highlights %}
+                      <ul class="items">
+                        {% for item in entry.highlights %}
+                          <li>
+                            <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
         {% elsif section_title == 'Manuscripts Under Review' %}
           <div class="publications">
             {% bibliography --query @unpublished %}

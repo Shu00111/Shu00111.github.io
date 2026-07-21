@@ -5,6 +5,7 @@ cv:
   location: Beijing, China
   email: shuyiwei24@mails.ucas.ac.cn
   phone: (+86) 159-9812-9699
+  website: https://shu00111.github.io
 
   sections:
     EDUCATION:
@@ -117,6 +118,7 @@ cv:
 
       - company: ShanghaiTech University
         position: Teaching Assistant, Digital Circuit Course
+        date: 2022
         highlights:
           - Led tutorials, answered technical questions, and assisted with assignment and examination grading.
 
