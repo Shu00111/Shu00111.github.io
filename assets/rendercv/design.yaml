@@ -50,7 +50,7 @@ design:
     space_above: 0.3cm
     space_below: 0.1cm
   sections:
-    allow_page_break: false
+    allow_page_break: true
     space_between_regular_entries: 0.45em
     space_between_text_based_entries: 0.1em
     show_time_spans_in: []
