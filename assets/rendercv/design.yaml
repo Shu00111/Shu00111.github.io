@@ -3,10 +3,10 @@ design:
   theme: classic
   page:
     size: us-letter
-    top_margin: 0.7in
-    bottom_margin: 0.7in
-    left_margin: 0.75in
-    right_margin: 0.75in
+    top_margin: 0.5in
+    bottom_margin: 0.5in
+    left_margin: 0.65in
+    right_margin: 0.65in
     show_footer: false
     show_top_note: false
   colors:
@@ -19,10 +19,10 @@ design:
   typography:
     alignment: left
     date_and_location_column_alignment: right
-    line_spacing: 0.55em
+    line_spacing: 0.5em
     font_family: XCharter
     font_size:
-      body: 10pt
+      body: 9.5pt
       name: 20pt
       headline: 10pt
       connections: 10pt
@@ -39,7 +39,7 @@ design:
     alignment: center
     space_below_name: 0.15cm
     space_below_headline: 0.12cm
-    space_below_connections: 0.4cm
+    space_below_connections: 0.25cm
     connections:
       show_icons: false
       display_urls_instead_of_usernames: false
@@ -47,11 +47,11 @@ design:
       space_between_connections: 0.18cm
   section_titles:
     type: without_line
-    space_above: 0.38cm
-    space_below: 0.15cm
+    space_above: 0.3cm
+    space_below: 0.1cm
   sections:
-    allow_page_break: true
-    space_between_regular_entries: 0.6em
+    allow_page_break: false
+    space_between_regular_entries: 0.45em
     space_between_text_based_entries: 0.1em
     show_time_spans_in: []
   entries:
