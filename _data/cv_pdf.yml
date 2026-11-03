@@ -64,14 +64,14 @@ cv:
           - Independently designed and integrated a 189 g aircraft, onboard electronics, control-surface actuation, and an adjustable catapult launcher; the complete platform had a total hardware cost of CNY 534 and required no GPS, airspeed sensor, or high-grade inertial navigation system.
           - Established a CFD-informed simulation-to-flight pipeline with randomized disturbances, noise, delay, and aerodynamic uncertainty; reduced the normalized final image-plane radial error from 0.5049 to 0.0027 and the RMS error from 1.4526 to 0.1732 in simulation, while achieving 20/20 real-world landings.
 
+    PUBLICATIONS:
       - name: "RKILPlanner: Risk-Based Kinematic Imitation Learning Planning Towards Human-Like Driving in Highway Scenarios"
         date: 2026
-        summary: "**Yiwei Shu**, Shuquan Wang, Jun Li. *Submitted to ROBIO 2026*."
+        summary: "**Yiwei Shu**, Shuquan Wang, Jun Li. *ROBIO 2026, accepted paper*."
         highlights:
           - Developed a risk-aware imitation-learning planner that integrates Driver's Risk Fields, personalized driving styles, and differentiable vehicle kinematics for physically feasible highway trajectory generation.
           - Evaluated on 28,641 HighD samples, achieving 0.159 m ADE, 0.443 m FDE, and a 0.3% miss rate over a safety-critical 2.5 s planning horizon.
 
-    PUBLICATIONS:
       - name: "Expanding Grasp Reachability: Field-Based Pose-Constrained Two-Stage Grasp Planning"
         date: 2026
         summary: "**Yiwei Shu**, Shuquan Wang, Jun Li, Hanying Sang, Yidong Ye. *ICoSR 2026, accepted full paper and oral presentation*."
